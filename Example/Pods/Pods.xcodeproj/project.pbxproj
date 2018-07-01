@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		0003A988E09A9C26ADB6299278D97F89 /* ExampleHooks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301223B3EB74E21CDB1303C459B57231 /* ExampleHooks.swift */; };
 		0100BCA814A8E787FA54BBD92FDA8B60 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDD0F5DAA0AC84C5E3ADE087C20B50BA /* Foundation.framework */; };
-		042FC4EE2E6CA68113FDD04C9945D966 /* CreditCardEvaluator-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A886C432275B92178C4457ED46A638D /* CreditCardEvaluator-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		083E9EA1531AD1E7F3C26A27DB7B8E3E /* QuickSpecBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BA4794DD94D5DE6BFFFEEC72B8C43E3 /* QuickSpecBase.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		0A2CA8B0DD7E300ABFCF1956E6B58248 /* Nimble.h in Headers */ = {isa = PBXBuildFile; fileRef = 2727DBDF3F41A52F002F6B1992165881 /* Nimble.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0AEA98B215F92CA51DB78748A02911DC /* Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38F7EB4258060BAA361D06EF1B16D9B /* Example.swift */; };
@@ -24,12 +23,14 @@
 		22E9F6FA56858A5F7A5D664E5968ECB0 /* NMBExceptionCapture.h in Headers */ = {isa = PBXBuildFile; fileRef = 88CCA655A571DD68102067AFB473BD77 /* NMBExceptionCapture.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		25D1805055756CAA69A167CA03B2465C /* ContainElementSatisfying.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD6CC02AD6D4C0E7D1169EF9ECB3706 /* ContainElementSatisfying.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		2631AB2BCAFB458CB4CC4741F8DE707B /* Callsite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C9E93FDAF76CEA15A9E23CC159DED1 /* Callsite.swift */; };
+		28EEC6A5F5AB148E77A9D75549FA94A1 /* CreditCardEvaluator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60D95B53A8080C85CDE19CAABB3942D /* CreditCardEvaluator.swift */; };
 		29A65FF7D1752DFFF87F5DC8F55CE859 /* ToSucceed.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE295D4D0ED3F1666C5921320F0E2C6 /* ToSucceed.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		2D39A66893213C7333346FE030A39007 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FEA1DF1C7C22E7B20D2DC30FB9D3EF1 /* Configuration.swift */; };
 		31A38088983A337F5732F2D76325C985 /* XCTestSuite+QuickTestSuiteBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D9A924C203A11767BBF4D9C3737DA5D /* XCTestSuite+QuickTestSuiteBuilder.m */; };
 		31C39ED8CB1C9317F1F2840FC919662D /* PostNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0D34DBF4CE55E4FF1BADBA826F9389 /* PostNotification.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		32B38992751B96F21324BFC9923BFCBD /* AssertionDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495BFC3F9A44D525D4BFC5B10557E6C3 /* AssertionDispatcher.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		35CADB1AD8E063A35DF68147F3183206 /* CwlMachBadInstructionHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = EF959663D47B18687B5785D72D856CB6 /* CwlMachBadInstructionHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		39A7649856BBC4E9447740E949CCF34D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDD0F5DAA0AC84C5E3ADE087C20B50BA /* Foundation.framework */; };
 		3A10341F3A0BCC01737A1C52F871EA70 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDD0F5DAA0AC84C5E3ADE087C20B50BA /* Foundation.framework */; };
 		3ACA4875A55A562B1EEED0B8B8212996 /* QuickSpecBase.m in Sources */ = {isa = PBXBuildFile; fileRef = E585A4F6C1434FD922B8371E432B5051 /* QuickSpecBase.m */; };
 		3B3A88E074630B1EBC2139F4F70F0443 /* ThrowAssertion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB0094EAAC3C18B000459B228F01637 /* ThrowAssertion.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
@@ -42,6 +43,7 @@
 		42EAAE8CFB95F2352FCE036F263263E1 /* CwlCatchException.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D1429ABADDB303927AEA89A830C740 /* CwlCatchException.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		45F183320C688F9978649F30ABE21D09 /* MatchError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AEA5EE84902B2868710A17C747AE0E /* MatchError.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		46C85B329AB23ECD28E33A33E752E8DD /* QuickSpec.h in Headers */ = {isa = PBXBuildFile; fileRef = EA8315675F3D2B2385E834043F85C676 /* QuickSpec.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		48D389B1F0CA4CA256B08E35E456E76E /* CreditCardEvaluator-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E7DA1E311824F71FD78A31FF46D5D3D /* CreditCardEvaluator-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		495F038D377B3446EDF50ADEE295509B /* QCKDSL.m in Sources */ = {isa = PBXBuildFile; fileRef = 12989D830FCE4AEF54A357265111CAEF /* QCKDSL.m */; };
 		4A61D0EBEC05F2E13BFD6CAB5B5E32AA /* URL+FileName.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D48A33A49B17952C7ABB6214240CB9 /* URL+FileName.swift */; };
 		4AC816DD805254616B25D2EFE401B75C /* Quick-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DBEE4D473415B347A54A2E432EE8EEF7 /* Quick-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -61,6 +63,7 @@
 		67DEEB0A525F59CFFAE229F08B854688 /* Closures.swift in Sources */ = {isa = PBXBuildFile; fileRef = D685C0D509328CD8778F99DD53A49A48 /* Closures.swift */; };
 		68FD03C72D719117929696B62038B3D7 /* NMBExpectation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2192785265D796ADAF8B5DE3C97DD4CE /* NMBExpectation.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		69B80157634D6FAF248D37F397732357 /* CwlPreconditionTesting.h in Headers */ = {isa = PBXBuildFile; fileRef = CAB52415DA15D60348D226639C322706 /* CwlPreconditionTesting.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6A9D9FC50441E81F9FE031510E907B26 /* IntExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60FC68A5CE1FDEDD4F04197F40C4EF17 /* IntExtensions.swift */; };
 		6BB0EBEB4730B94AC07458E398D142C8 /* MatcherProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F4384CDA1479E6D88E3486B78FD7485 /* MatcherProtocols.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		6BC3BE69DBCA10E94C097A498B48C238 /* SuiteHooks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DD07575CFDE63DE6412F425FDBED71 /* SuiteHooks.swift */; };
 		6CB4890B9BF5F846E980634AFE83917D /* NMBExceptionCapture.m in Sources */ = {isa = PBXBuildFile; fileRef = 24FAA89E2AC44E204B5E39B77BD6B921 /* NMBExceptionCapture.m */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
@@ -75,6 +78,7 @@
 		8170866E2ACE0ACFBC6D90081354EC65 /* Stringers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B5614CBE84B80AA39F75553B3C322A /* Stringers.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		8B0352701792DFE67708A717DB7E62AE /* DSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C78BF27F3A2B7B1368FE2E4317B6557 /* DSL.swift */; };
 		8B55BD430033027AD5FF22D630DD9F62 /* DSL.m in Sources */ = {isa = PBXBuildFile; fileRef = 82267A98670DE3E96EAB2047A8872FE0 /* DSL.m */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
+		8DECB8C78F74602A2EBF2F0D7939F1A0 /* CreditCardEvaluator-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = ED7044D3CB2995A4863D8544CEDDF7A4 /* CreditCardEvaluator-dummy.m */; };
 		96132E7432F8DD315A88A07C6B4F9C72 /* NMBStringify.h in Headers */ = {isa = PBXBuildFile; fileRef = E15D0BD895E38B9512195BFED925B0F7 /* NMBStringify.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		988EED125395950177DC14AF9BC87D8D /* HaveCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698366519E8DF1484C0AE2845EB47D7F /* HaveCount.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		9FA1AE2FE0400B7C3CE0A793F328C603 /* ExampleGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829CA47FBDF0A83BF67F7102D4CD40E6 /* ExampleGroup.swift */; };
@@ -90,11 +94,9 @@
 		AF1174085D9BC5D50FCE0480E9C2BE94 /* BeGreaterThan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E944EFD24B41C7BD60837DFABAFB06 /* BeGreaterThan.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		B102ABE4E54B71B3D2C2118E2782FAB9 /* BeLessThan.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AB10174D3955FC8BF42A3B45B4C011 /* BeLessThan.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		B2C151B20635A480E1937E3D2B509BB4 /* Async.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45DFC46E4EDF480399017D92090D5C1 /* Async.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
-		B69C8FDA4222F5C8FF60A2AC82460625 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDD0F5DAA0AC84C5E3ADE087C20B50BA /* Foundation.framework */; };
 		BB9046DC904B5E132D10AC25CE684E29 /* QuickConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D2E298780429D096F1EC434CFC3B225 /* QuickConfiguration.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BC1F38418A734AF9EC7FFA15519A6A58 /* Quick-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EEBCF9B57684FD89791D983A4733101F /* Quick-dummy.m */; };
 		BC7B9761322C74FA27969BD55833BA47 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77125F245BAE7809A034657A48A40830 /* Errors.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
-		BC82FCA11F688750884A5C172675BF6E /* IntExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3572C61C29B96612705C5FE54E4886C0 /* IntExtensions.swift */; };
 		BF3B7218901760A6226C7F6346BEF454 /* BeCloseTo.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD64278700877FA62EC38F4B27A4881 /* BeCloseTo.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		C06FA100C1BBEE34B863BCB8A65359C1 /* MatcherFunc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E9F8B6E78A1CAF1BEE982E163FA968 /* MatcherFunc.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		C1D862177DC2999FAC710AC25F253BD0 /* BeAnInstanceOf.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C33F4DC31A8120E8743B2A6163585F /* BeAnInstanceOf.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
@@ -110,9 +112,7 @@
 		D9E62C41794D0B5D2CD68CA92C4BA836 /* mach_excServer.c in Sources */ = {isa = PBXBuildFile; fileRef = 679FFD5386CAB1887F96D8FF6D84B7B8 /* mach_excServer.c */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		DF026F6F406A4FB6CEA63B0A4B9E27DD /* AllPass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D7B54C77385B78FFA011C64D94E436 /* AllPass.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		DFA3A2AA47840D97A07AF7B8BEA772CA /* World.h in Headers */ = {isa = PBXBuildFile; fileRef = 129DA04B381B509DAEDD565711C5A0DA /* World.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		E21D678FC043D20899130C1077377DF8 /* CreditCardEvaluator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99248ABA2EE7327A7B28D6E7A173545 /* CreditCardEvaluator.swift */; };
 		E3D24B2F7B6FAF3F069A92E768AAA08A /* NSString+C99ExtendedIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057B1682EF92E71137867F0C259AF2CC /* NSString+C99ExtendedIdentifier.swift */; };
-		E56630B870575DE187E2F75CFA0BE209 /* CreditCardEvaluator-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C640CDAFDC61BBDDE35150CAA8177EFA /* CreditCardEvaluator-dummy.m */; };
 		E5A835798D8B13BC40CDE7DA558D7F02 /* Quick.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C846417EADDAAFF733CF6AC8FEB5EEA /* Quick.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EAAA05EBBC34225C0DB45797712E24A1 /* AsyncMatcherWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE63B47CD572A17C6AFDF8853BFCA4F /* AsyncMatcherWrapper.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		EAE2AAE5EB826B38978692984BB22FDD /* RaisesException.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6288AE2766817391D894EE944596984 /* RaisesException.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
@@ -125,6 +125,7 @@
 		F3BAA36614ABDBC0538B0DEA99CF80A0 /* SourceLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EADFE06546D2FE7C91DF557E0F5ED093 /* SourceLocation.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		F4BD249C60F21F5E0F7C1FAC8A5BC2AF /* BeIdenticalTo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9DA3454B15DE38784FA22A452C0121 /* BeIdenticalTo.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		F9649DD59BAEE88C6864EEFE73ECA88C /* AdapterProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5378FB44B13DD72D6D9510C786BA96C5 /* AdapterProtocols.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
+		FB33C6F349A84943CE99073F58FD2E89 /* EvaluationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5632A286A463E689A94A0C2500FB0A /* EvaluationError.swift */; };
 		FB433A84B0A557CD5E5948A8B6705024 /* DSL.h in Headers */ = {isa = PBXBuildFile; fileRef = 2294B6CCB2D8D93AE1F605AAA6A03240 /* DSL.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -154,7 +155,7 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 80B3AFFC2C6F4DB31BF97D7302C04EFF;
+			remoteGlobalIDString = F504D7CA4534A82A00ADF33A42C8F353;
 			remoteInfo = CreditCardEvaluator;
 		};
 /* End PBXContainerItemProxy section */
@@ -162,7 +163,7 @@
 /* Begin PBXFileReference section */
 		014CC71E572C5CC14ADFA82A8B7B97DC /* Expression.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Expression.swift; path = Sources/Nimble/Expression.swift; sourceTree = "<group>"; };
 		057B1682EF92E71137867F0C259AF2CC /* NSString+C99ExtendedIdentifier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSString+C99ExtendedIdentifier.swift"; path = "Sources/Quick/NSString+C99ExtendedIdentifier.swift"; sourceTree = "<group>"; };
-		071587E7276B0CF337A14BEB6DD8976D /* CreditCardEvaluator.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CreditCardEvaluator.xcconfig; sourceTree = "<group>"; };
+		06D737623EF852D8F7515F0825710931 /* CreditCardEvaluator.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = CreditCardEvaluator.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		07E0BD8A006D7CE8CC0FE4B2A4DC1863 /* Pods-CreditCardEvaluator_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CreditCardEvaluator_Tests-resources.sh"; sourceTree = "<group>"; };
 		0AB0094EAAC3C18B000459B228F01637 /* ThrowAssertion.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ThrowAssertion.swift; path = Sources/Nimble/Matchers/ThrowAssertion.swift; sourceTree = "<group>"; };
 		0BE63B47CD572A17C6AFDF8853BFCA4F /* AsyncMatcherWrapper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AsyncMatcherWrapper.swift; path = Sources/Nimble/Matchers/AsyncMatcherWrapper.swift; sourceTree = "<group>"; };
@@ -188,6 +189,7 @@
 		2988C9C85300CC18FB757C1CA2125C71 /* Pods-CreditCardEvaluator_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-CreditCardEvaluator_Tests.modulemap"; sourceTree = "<group>"; };
 		2DD6CC02AD6D4C0E7D1169EF9ECB3706 /* ContainElementSatisfying.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ContainElementSatisfying.swift; path = Sources/Nimble/Matchers/ContainElementSatisfying.swift; sourceTree = "<group>"; };
 		2E8E430D83F3CC7F72E348A0B222C46F /* QuickTestSuite.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QuickTestSuite.swift; path = Sources/Quick/QuickTestSuite.swift; sourceTree = "<group>"; };
+		2FEA65607940CDE4474E4417019B5305 /* CreditCardEvaluator.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CreditCardEvaluator.modulemap; sourceTree = "<group>"; };
 		301223B3EB74E21CDB1303C459B57231 /* ExampleHooks.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExampleHooks.swift; path = Sources/Quick/Hooks/ExampleHooks.swift; sourceTree = "<group>"; };
 		3018B485E8310AC7A651EF03D32D0823 /* Expectation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Expectation.swift; path = Sources/Nimble/Expectation.swift; sourceTree = "<group>"; };
 		302EF8E66B89F3DB1A346EC83C76CA6F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -195,24 +197,24 @@
 		3249FA62F2A232B62F235D53C9CC6678 /* Pods-CreditCardEvaluator_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CreditCardEvaluator_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		330310D00F9579C0CBC218B09F835B9D /* Pods-CreditCardEvaluator_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CreditCardEvaluator_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		34B5614CBE84B80AA39F75553B3C322A /* Stringers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Stringers.swift; path = Sources/Nimble/Utils/Stringers.swift; sourceTree = "<group>"; };
-		3572C61C29B96612705C5FE54E4886C0 /* IntExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = IntExtensions.swift; sourceTree = "<group>"; };
 		35AEA5EE84902B2868710A17C747AE0E /* MatchError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MatchError.swift; path = Sources/Nimble/Matchers/MatchError.swift; sourceTree = "<group>"; };
 		38A82DE4A0130E4C946A904FEDDD74CA /* QuickSpec.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QuickSpec.m; path = Sources/QuickObjectiveC/QuickSpec.m; sourceTree = "<group>"; };
-		38E7539EE9D9B5761698C98B54008BF6 /* CreditCardEvaluator-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CreditCardEvaluator-prefix.pch"; sourceTree = "<group>"; };
-		38FCA1A37FD1AA532EC266F9B8724391 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3B6BAD1D6087151AE80585CD387919BA /* CwlDarwinDefinitions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CwlDarwinDefinitions.swift; path = Carthage/Checkouts/CwlPreconditionTesting/Sources/CwlPreconditionTesting/CwlDarwinDefinitions.swift; sourceTree = "<group>"; };
+		3C5632A286A463E689A94A0C2500FB0A /* EvaluationError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EvaluationError.swift; path = CreditCardEvaluator/Classes/EvaluationError.swift; sourceTree = "<group>"; };
 		40E944EFD24B41C7BD60837DFABAFB06 /* BeGreaterThan.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeGreaterThan.swift; path = Sources/Nimble/Matchers/BeGreaterThan.swift; sourceTree = "<group>"; };
 		41EEDB00DD6BB52B5313721F1006C99E /* Pods-CreditCardEvaluator_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CreditCardEvaluator_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		42DD07575CFDE63DE6412F425FDBED71 /* SuiteHooks.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SuiteHooks.swift; path = Sources/Quick/Hooks/SuiteHooks.swift; sourceTree = "<group>"; };
 		440EEE98EDFE4F4752E17AFA3F550530 /* BeGreaterThanOrEqualTo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeGreaterThanOrEqualTo.swift; path = Sources/Nimble/Matchers/BeGreaterThanOrEqualTo.swift; sourceTree = "<group>"; };
 		446D75F0E07CB56AA975B22BB8E4B518 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		44E48D269C5130E9777AA3EAD37004B2 /* CreditCardEvaluator.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = CreditCardEvaluator.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		467F00CAF06ADEF612F697F068843FB2 /* World+DSL.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "World+DSL.h"; path = "Sources/QuickObjectiveC/DSL/World+DSL.h"; sourceTree = "<group>"; };
 		4751C923ACB051055F76821461557965 /* DSL+Wait.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DSL+Wait.swift"; path = "Sources/Nimble/DSL+Wait.swift"; sourceTree = "<group>"; };
 		47578CD4C4970729A947555C915B2317 /* ThrowError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ThrowError.swift; path = Sources/Nimble/Matchers/ThrowError.swift; sourceTree = "<group>"; };
 		495BFC3F9A44D525D4BFC5B10557E6C3 /* AssertionDispatcher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AssertionDispatcher.swift; path = Sources/Nimble/Adapters/AssertionDispatcher.swift; sourceTree = "<group>"; };
+		4B0E1BADF26E1DD35529DE3C98A0123E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		4B3A777763BF87DF422086CE7EB8727B /* Pods-CreditCardEvaluator_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CreditCardEvaluator_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		4E7DA1E311824F71FD78A31FF46D5D3D /* CreditCardEvaluator-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CreditCardEvaluator-umbrella.h"; sourceTree = "<group>"; };
 		4FEA1DF1C7C22E7B20D2DC30FB9D3EF1 /* Configuration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Configuration.swift; path = Sources/Quick/Configuration/Configuration.swift; sourceTree = "<group>"; };
+		529C427871E70725D454853FD9718DFF /* CreditCardEvaluator-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CreditCardEvaluator-prefix.pch"; sourceTree = "<group>"; };
 		5378FB44B13DD72D6D9510C786BA96C5 /* AdapterProtocols.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AdapterProtocols.swift; path = Sources/Nimble/Adapters/AdapterProtocols.swift; sourceTree = "<group>"; };
 		53D1429ABADDB303927AEA89A830C740 /* CwlCatchException.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CwlCatchException.swift; path = Carthage/Checkouts/CwlCatchException/Sources/CwlCatchException/CwlCatchException.swift; sourceTree = "<group>"; };
 		55E9F8B6E78A1CAF1BEE982E163FA968 /* MatcherFunc.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MatcherFunc.swift; path = Sources/Nimble/Matchers/MatcherFunc.swift; sourceTree = "<group>"; };
@@ -221,6 +223,7 @@
 		5ED6BEB8CEEF287C8005FB7CBA02BFAF /* Quick.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Quick.framework; path = Quick.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F1FBE2D4C70D4EDB55D5E2C6BB2F30F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		605EF2A73B22D3E0863B202A2B7CFDEE /* BeNil.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeNil.swift; path = Sources/Nimble/Matchers/BeNil.swift; sourceTree = "<group>"; };
+		60FC68A5CE1FDEDD4F04197F40C4EF17 /* IntExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = IntExtensions.swift; sourceTree = "<group>"; };
 		613C21AD6E98946BCAA54F25374CE020 /* NMBStringify.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NMBStringify.m; path = Sources/NimbleObjectiveC/NMBStringify.m; sourceTree = "<group>"; };
 		645422FB2E7D26E7DD6556CCAC35DAF0 /* BeLogical.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeLogical.swift; path = Sources/Nimble/Matchers/BeLogical.swift; sourceTree = "<group>"; };
 		65B4CDEF78BF13177A9303C1E765E5F6 /* World+DSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "World+DSL.swift"; path = "Sources/Quick/DSL/World+DSL.swift"; sourceTree = "<group>"; };
@@ -229,7 +232,7 @@
 		67C7BB2DC0DED3CBCF5D776D9E39AB30 /* Match.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Match.swift; path = Sources/Nimble/Matchers/Match.swift; sourceTree = "<group>"; };
 		698366519E8DF1484C0AE2845EB47D7F /* HaveCount.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HaveCount.swift; path = Sources/Nimble/Matchers/HaveCount.swift; sourceTree = "<group>"; };
 		69CFEBDFF127350398462FF823B76A13 /* Nimble-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Nimble-umbrella.h"; sourceTree = "<group>"; };
-		6A886C432275B92178C4457ED46A638D /* CreditCardEvaluator-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CreditCardEvaluator-umbrella.h"; sourceTree = "<group>"; };
+		6AC4E5C146C11CB9ADB2976C7C3993A8 /* CreditCardEvaluator.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CreditCardEvaluator.xcconfig; sourceTree = "<group>"; };
 		6BA4794DD94D5DE6BFFFEEC72B8C43E3 /* QuickSpecBase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QuickSpecBase.h; path = Sources/QuickSpecBase/include/QuickSpecBase.h; sourceTree = "<group>"; };
 		6D2E298780429D096F1EC434CFC3B225 /* QuickConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QuickConfiguration.h; path = Sources/QuickObjectiveC/Configuration/QuickConfiguration.h; sourceTree = "<group>"; };
 		6FE70C32E25461439284886B28C706A5 /* Pods-CreditCardEvaluator_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CreditCardEvaluator_Example-dummy.m"; sourceTree = "<group>"; };
@@ -238,6 +241,7 @@
 		73C1D1A0D20C667FAF4F01C3BA4AC451 /* Behavior.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Behavior.swift; path = Sources/Quick/Behavior.swift; sourceTree = "<group>"; };
 		75479164D5E0F348E301F452C756BA09 /* Pods-CreditCardEvaluator_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CreditCardEvaluator_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		75B78AC1C0059E66BD95A9F0CD2D24F5 /* NSBundle+CurrentTestBundle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSBundle+CurrentTestBundle.swift"; path = "Sources/Quick/NSBundle+CurrentTestBundle.swift"; sourceTree = "<group>"; };
+		76A3F4562E4BB9CC6F4C03B868480B00 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		77125F245BAE7809A034657A48A40830 /* Errors.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Errors.swift; path = Sources/Nimble/Utils/Errors.swift; sourceTree = "<group>"; };
 		77C2834A0AE71F3E85759885C0557533 /* SatisfyAnyOf.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SatisfyAnyOf.swift; path = Sources/Nimble/Matchers/SatisfyAnyOf.swift; sourceTree = "<group>"; };
 		791B85B1ED16C456CFD4FC78227C027C /* Pods-CreditCardEvaluator_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-CreditCardEvaluator_Example.modulemap"; sourceTree = "<group>"; };
@@ -259,7 +263,6 @@
 		9245B48A46AAC45502A6B8A2AB745038 /* HooksPhase.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HooksPhase.swift; path = Sources/Quick/Hooks/HooksPhase.swift; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		94B7788701BCA58792755E59F665EC3F /* Pods_CreditCardEvaluator_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_CreditCardEvaluator_Tests.framework; path = "Pods-CreditCardEvaluator_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		98A0B4F80E8C03D8992F7511EB1FB41D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		9B249E26F1DCB2E01638872C689A943E /* Pods-CreditCardEvaluator_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CreditCardEvaluator_Example-resources.sh"; sourceTree = "<group>"; };
 		9C1965DFDB98F4612965B29CA2787EFB /* Nimble-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Nimble-prefix.pch"; sourceTree = "<group>"; };
 		9C78BF27F3A2B7B1368FE2E4317B6557 /* DSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DSL.swift; path = Sources/Quick/DSL/DSL.swift; sourceTree = "<group>"; };
@@ -282,7 +285,6 @@
 		BAA7B55BBFC51CA440749FF23010D40E /* EndWith.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EndWith.swift; path = Sources/Nimble/Matchers/EndWith.swift; sourceTree = "<group>"; };
 		BBD64278700877FA62EC38F4B27A4881 /* BeCloseTo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeCloseTo.swift; path = Sources/Nimble/Matchers/BeCloseTo.swift; sourceTree = "<group>"; };
 		C57921338FECDDCDAAC88A57C2055737 /* CwlCatchException.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CwlCatchException.h; path = Carthage/Checkouts/CwlCatchException/Sources/CwlCatchExceptionSupport/include/CwlCatchException.h; sourceTree = "<group>"; };
-		C640CDAFDC61BBDDE35150CAA8177EFA /* CreditCardEvaluator-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CreditCardEvaluator-dummy.m"; sourceTree = "<group>"; };
 		C949E12BA82E3B6636449B775694F4F3 /* CwlCatchException.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CwlCatchException.m; path = Carthage/Checkouts/CwlCatchException/Sources/CwlCatchExceptionSupport/CwlCatchException.m; sourceTree = "<group>"; };
 		CAB52415DA15D60348D226639C322706 /* CwlPreconditionTesting.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CwlPreconditionTesting.h; path = Carthage/Checkouts/CwlPreconditionTesting/Sources/CwlPreconditionTesting/Mach/CwlPreconditionTesting.h; sourceTree = "<group>"; };
 		CCE295D4D0ED3F1666C5921320F0E2C6 /* ToSucceed.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ToSucceed.swift; path = Sources/Nimble/Matchers/ToSucceed.swift; sourceTree = "<group>"; };
@@ -291,7 +293,7 @@
 		D0569DCD8E8A830A340B75D77B531C7A /* Pods-CreditCardEvaluator_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CreditCardEvaluator_Example-umbrella.h"; sourceTree = "<group>"; };
 		D31FA66A5FC0844A36FC1358ACE2220C /* BeVoid.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeVoid.swift; path = Sources/Nimble/Matchers/BeVoid.swift; sourceTree = "<group>"; };
 		D4807098447CE1A8582ECAA757DF6B67 /* Pods-CreditCardEvaluator_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CreditCardEvaluator_Example.release.xcconfig"; sourceTree = "<group>"; };
-		D656843B89789129A2F1092478308CDC /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		D60D95B53A8080C85CDE19CAABB3942D /* CreditCardEvaluator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CreditCardEvaluator.swift; path = CreditCardEvaluator/Classes/CreditCardEvaluator.swift; sourceTree = "<group>"; };
 		D685C0D509328CD8778F99DD53A49A48 /* Closures.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Closures.swift; path = Sources/Quick/Hooks/Closures.swift; sourceTree = "<group>"; };
 		D6ACF56A3280DBAABFB47A125BE3EFC6 /* Quick.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Quick.modulemap; sourceTree = "<group>"; };
 		D954E7E4D336837086313DAE758F7F32 /* Functional.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Functional.swift; path = Sources/Nimble/Utils/Functional.swift; sourceTree = "<group>"; };
@@ -301,17 +303,17 @@
 		E15D0BD895E38B9512195BFED925B0F7 /* NMBStringify.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NMBStringify.h; path = Sources/NimbleObjectiveC/NMBStringify.h; sourceTree = "<group>"; };
 		E585A4F6C1434FD922B8371E432B5051 /* QuickSpecBase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QuickSpecBase.m; path = Sources/QuickSpecBase/QuickSpecBase.m; sourceTree = "<group>"; };
 		E88128A65EA18D595B6E9DC801323F61 /* Nimble.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Nimble.framework; path = Nimble.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E99248ABA2EE7327A7B28D6E7A173545 /* CreditCardEvaluator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CreditCardEvaluator.swift; path = CreditCardEvaluator/Classes/CreditCardEvaluator.swift; sourceTree = "<group>"; };
 		EA57C72EE293B50ED3E1BA58B9FFCD89 /* Quick.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Quick.xcconfig; sourceTree = "<group>"; };
 		EA8315675F3D2B2385E834043F85C676 /* QuickSpec.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QuickSpec.h; path = Sources/QuickObjectiveC/QuickSpec.h; sourceTree = "<group>"; };
 		EADFE06546D2FE7C91DF557E0F5ED093 /* SourceLocation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SourceLocation.swift; path = Sources/Nimble/Utils/SourceLocation.swift; sourceTree = "<group>"; };
 		EC9AD5FA0EE5E85143D7DD2030D6818D /* BeAKindOf.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeAKindOf.swift; path = Sources/Nimble/Matchers/BeAKindOf.swift; sourceTree = "<group>"; };
-		ED8B1AD34F6620B15B0A3C81081C6BBD /* CreditCardEvaluator.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CreditCardEvaluator.modulemap; sourceTree = "<group>"; };
+		ED7044D3CB2995A4863D8544CEDDF7A4 /* CreditCardEvaluator-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CreditCardEvaluator-dummy.m"; sourceTree = "<group>"; };
 		EEBCF9B57684FD89791D983A4733101F /* Quick-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Quick-dummy.m"; sourceTree = "<group>"; };
 		EF959663D47B18687B5785D72D856CB6 /* CwlMachBadInstructionHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CwlMachBadInstructionHandler.h; path = Carthage/Checkouts/CwlPreconditionTesting/Sources/CwlMachBadInstructionHandler/include/CwlMachBadInstructionHandler.h; sourceTree = "<group>"; };
 		F06F54FB61A4C3B3ABE9D584EF3E906B /* Pods-CreditCardEvaluator_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CreditCardEvaluator_Tests-dummy.m"; sourceTree = "<group>"; };
 		F2C33F4DC31A8120E8743B2A6163585F /* BeAnInstanceOf.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeAnInstanceOf.swift; path = Sources/Nimble/Matchers/BeAnInstanceOf.swift; sourceTree = "<group>"; };
 		F4C7D6328493B73EF741AC61F4CEF01E /* QuickSelectedTestSuiteBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QuickSelectedTestSuiteBuilder.swift; path = Sources/Quick/QuickSelectedTestSuiteBuilder.swift; sourceTree = "<group>"; };
+		F910E5AABBE714D2ACD2A7D51824D3B7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -332,19 +334,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		74FDE88D52279A136FCE92041A4F4EA5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39A7649856BBC4E9447740E949CCF34D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		819A9B65073BE3B5599196C0A3B27EBC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				D1503C762F7E5D2510DCE2FBF2F89D08 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B69BF4EB58BD153E34701BF35990B155 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B69C8FDA4222F5C8FF60A2AC82460625 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -377,6 +379,16 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
+		38A153971D58DB4B2EBDEEED828A9735 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				06D737623EF852D8F7515F0825710931 /* CreditCardEvaluator.podspec */,
+				4B0E1BADF26E1DD35529DE3C98A0123E /* LICENSE */,
+				76A3F4562E4BB9CC6F4C03B868480B00 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
 		3C3FDCB7F0ADE0D02BF96EB1D4E2C89F /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -394,22 +406,10 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		562D7B6AD5337B01B06C154980B856CC /* CreditCardEvaluator */ = {
+		627EB237F2214AD3AAAEB2F5520ABACA /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				E99248ABA2EE7327A7B28D6E7A173545 /* CreditCardEvaluator.swift */,
-				7B88B38289292D441F944E0579409DE6 /* Extensions */,
-				DFD6A040877BA26D070EE3E6E3B8B154 /* Pod */,
-				EAAC7BCEAB5760441A7B39D188C1B332 /* Support Files */,
-			);
-			name = CreditCardEvaluator;
-			path = ../..;
-			sourceTree = "<group>";
-		};
-		6855000E0F16F07ABAAB8938DCAE134E /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				562D7B6AD5337B01B06C154980B856CC /* CreditCardEvaluator */,
+				6B7B1096E6B2D100A4950B02F38B5C7B /* CreditCardEvaluator */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
@@ -492,6 +492,33 @@
 			path = Nimble;
 			sourceTree = "<group>";
 		};
+		6B7B1096E6B2D100A4950B02F38B5C7B /* CreditCardEvaluator */ = {
+			isa = PBXGroup;
+			children = (
+				D60D95B53A8080C85CDE19CAABB3942D /* CreditCardEvaluator.swift */,
+				3C5632A286A463E689A94A0C2500FB0A /* EvaluationError.swift */,
+				E40ED51AD7AE8E4E5AC7604F7BD423DE /* Extensions */,
+				38A153971D58DB4B2EBDEEED828A9735 /* Pod */,
+				744F50EC0BA803A505ADAD2BD3DA3AC6 /* Support Files */,
+			);
+			name = CreditCardEvaluator;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		744F50EC0BA803A505ADAD2BD3DA3AC6 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2FEA65607940CDE4474E4417019B5305 /* CreditCardEvaluator.modulemap */,
+				6AC4E5C146C11CB9ADB2976C7C3993A8 /* CreditCardEvaluator.xcconfig */,
+				ED7044D3CB2995A4863D8544CEDDF7A4 /* CreditCardEvaluator-dummy.m */,
+				529C427871E70725D454853FD9718DFF /* CreditCardEvaluator-prefix.pch */,
+				4E7DA1E311824F71FD78A31FF46D5D3D /* CreditCardEvaluator-umbrella.h */,
+				F910E5AABBE714D2ACD2A7D51824D3B7 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/CreditCardEvaluator";
+			sourceTree = "<group>";
+		};
 		7AB6A5336EC93C67059AD95448D42818 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -504,20 +531,11 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		7B88B38289292D441F944E0579409DE6 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				3572C61C29B96612705C5FE54E4886C0 /* IntExtensions.swift */,
-			);
-			name = Extensions;
-			path = CreditCardEvaluator/Classes/Extensions;
-			sourceTree = "<group>";
-		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				6855000E0F16F07ABAAB8938DCAE134E /* Development Pods */,
+				627EB237F2214AD3AAAEB2F5520ABACA /* Development Pods */,
 				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
 				3C3FDCB7F0ADE0D02BF96EB1D4E2C89F /* Pods */,
 				7AB6A5336EC93C67059AD95448D42818 /* Products */,
@@ -630,28 +648,13 @@
 			path = Quick;
 			sourceTree = "<group>";
 		};
-		DFD6A040877BA26D070EE3E6E3B8B154 /* Pod */ = {
+		E40ED51AD7AE8E4E5AC7604F7BD423DE /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				44E48D269C5130E9777AA3EAD37004B2 /* CreditCardEvaluator.podspec */,
-				D656843B89789129A2F1092478308CDC /* LICENSE */,
-				98A0B4F80E8C03D8992F7511EB1FB41D /* README.md */,
+				60FC68A5CE1FDEDD4F04197F40C4EF17 /* IntExtensions.swift */,
 			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
-		EAAC7BCEAB5760441A7B39D188C1B332 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				ED8B1AD34F6620B15B0A3C81081C6BBD /* CreditCardEvaluator.modulemap */,
-				071587E7276B0CF337A14BEB6DD8976D /* CreditCardEvaluator.xcconfig */,
-				C640CDAFDC61BBDDE35150CAA8177EFA /* CreditCardEvaluator-dummy.m */,
-				38E7539EE9D9B5761698C98B54008BF6 /* CreditCardEvaluator-prefix.pch */,
-				6A886C432275B92178C4457ED46A638D /* CreditCardEvaluator-umbrella.h */,
-				38FCA1A37FD1AA532EC266F9B8724391 /* Info.plist */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/CreditCardEvaluator";
+			name = Extensions;
+			path = CreditCardEvaluator/Classes/Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -690,6 +693,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8DCE0B75694DECEE609E51C41A3A669A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48D389B1F0CA4CA256B08E35E456E76E /* CreditCardEvaluator-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D5E68E0B68346B24F87B596696C82447 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -702,14 +713,6 @@
 				083E9EA1531AD1E7F3C26A27DB7B8E3E /* QuickSpecBase.h in Headers */,
 				190DE4846EDE74A70C365147153C6B0D /* World+DSL.h in Headers */,
 				DFA3A2AA47840D97A07AF7B8BEA772CA /* World.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		EC49D5C71215D9F17619DE20022663BE /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				042FC4EE2E6CA68113FDD04C9945D966 /* CreditCardEvaluator-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -751,23 +754,6 @@
 			productReference = 27F192E52604B70A9DB2D662406C8F51 /* Pods_CreditCardEvaluator_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		80B3AFFC2C6F4DB31BF97D7302C04EFF /* CreditCardEvaluator */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 358930914FE6ED4D5D75510787E3B5C6 /* Build configuration list for PBXNativeTarget "CreditCardEvaluator" */;
-			buildPhases = (
-				BE938D067B11645810C43F556CE7262B /* Sources */,
-				B69BF4EB58BD153E34701BF35990B155 /* Frameworks */,
-				EC49D5C71215D9F17619DE20022663BE /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = CreditCardEvaluator;
-			productName = CreditCardEvaluator;
-			productReference = 31629B563BE756B2F21B90ACEFB6E797 /* CreditCardEvaluator.framework */;
-			productType = "com.apple.product-type.framework";
-		};
 		D3DB36D6530D32AF0363A5DA118494A0 /* Pods-CreditCardEvaluator_Tests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6B61342D3FDC36E2CA3D1A5D4B571BD7 /* Build configuration list for PBXNativeTarget "Pods-CreditCardEvaluator_Tests" */;
@@ -805,6 +791,23 @@
 			productReference = E88128A65EA18D595B6E9DC801323F61 /* Nimble.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		F504D7CA4534A82A00ADF33A42C8F353 /* CreditCardEvaluator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A0AA2891B874B1BDF1CF28744651414A /* Build configuration list for PBXNativeTarget "CreditCardEvaluator" */;
+			buildPhases = (
+				56CC82042AC6A12B296E724493A95F5F /* Sources */,
+				74FDE88D52279A136FCE92041A4F4EA5 /* Frameworks */,
+				8DCE0B75694DECEE609E51C41A3A669A /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CreditCardEvaluator;
+			productName = CreditCardEvaluator;
+			productReference = 31629B563BE756B2F21B90ACEFB6E797 /* CreditCardEvaluator.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -826,7 +829,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				80B3AFFC2C6F4DB31BF97D7302C04EFF /* CreditCardEvaluator */,
+				F504D7CA4534A82A00ADF33A42C8F353 /* CreditCardEvaluator */,
 				DD7C8BF89FE8053D0A2A2D88BB49CF07 /* Nimble */,
 				14C5EB3712E5928A7CFC85F49AA50D07 /* Pods-CreditCardEvaluator_Example */,
 				D3DB36D6530D32AF0363A5DA118494A0 /* Pods-CreditCardEvaluator_Tests */,
@@ -912,6 +915,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		56CC82042AC6A12B296E724493A95F5F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DECB8C78F74602A2EBF2F0D7939F1A0 /* CreditCardEvaluator-dummy.m in Sources */,
+				28EEC6A5F5AB148E77A9D75549FA94A1 /* CreditCardEvaluator.swift in Sources */,
+				FB33C6F349A84943CE99073F58FD2E89 /* EvaluationError.swift in Sources */,
+				6A9D9FC50441E81F9FE031510E907B26 /* IntExtensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7DDD9731DAA040609A1856E9F656D6D2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -953,23 +967,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BE938D067B11645810C43F556CE7262B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E56630B870575DE187E2F75CFA0BE209 /* CreditCardEvaluator-dummy.m in Sources */,
-				E21D678FC043D20899130C1077377DF8 /* CreditCardEvaluator.swift in Sources */,
-				BC82FCA11F688750884A5C172675BF6E /* IntExtensions.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
 		0BFF23744C84D4DCD13DA6A3FED6DCBB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = CreditCardEvaluator;
-			target = 80B3AFFC2C6F4DB31BF97D7302C04EFF /* CreditCardEvaluator */;
+			target = F504D7CA4534A82A00ADF33A42C8F353 /* CreditCardEvaluator */;
 			targetProxy = 8742EDD6980B21BC64779D6DC4B3C7DA /* PBXContainerItemProxy */;
 		};
 		11F093EA9117A023F1BD38AD55B66F96 /* PBXTargetDependency */ = {
@@ -1061,9 +1065,9 @@
 			};
 			name = Release;
 		};
-		707609133F4BEC913C493A18F4DE722C /* Release */ = {
+		713F8BD77FE11B5AEBBA7730D4C7F435 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 071587E7276B0CF337A14BEB6DD8976D /* CreditCardEvaluator.xcconfig */;
+			baseConfigurationReference = 6AC4E5C146C11CB9ADB2976C7C3993A8 /* CreditCardEvaluator.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1223,38 +1227,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
-		};
-		9C0F14172EEEA2C303B595CDF6895080 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 071587E7276B0CF337A14BEB6DD8976D /* CreditCardEvaluator.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/CreditCardEvaluator/CreditCardEvaluator-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/CreditCardEvaluator/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/CreditCardEvaluator/CreditCardEvaluator.modulemap";
-				PRODUCT_MODULE_NAME = CreditCardEvaluator;
-				PRODUCT_NAME = CreditCardEvaluator;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
 		};
 		B056B7E8EFA95198BCA6F6025F09853D /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -1416,6 +1388,38 @@
 			};
 			name = Debug;
 		};
+		E8068C46F3ADE5FC40020D987D9D8A55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6AC4E5C146C11CB9ADB2976C7C3993A8 /* CreditCardEvaluator.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CreditCardEvaluator/CreditCardEvaluator-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CreditCardEvaluator/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/CreditCardEvaluator/CreditCardEvaluator.modulemap";
+				PRODUCT_MODULE_NAME = CreditCardEvaluator;
+				PRODUCT_NAME = CreditCardEvaluator;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		F6C7FD1CB95173996EB13527E4F19689 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = CE31DE883347DA5FE6B7F79F715D5D71 /* Nimble.xcconfig */;
@@ -1470,15 +1474,6 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		358930914FE6ED4D5D75510787E3B5C6 /* Build configuration list for PBXNativeTarget "CreditCardEvaluator" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				9C0F14172EEEA2C303B595CDF6895080 /* Debug */,
-				707609133F4BEC913C493A18F4DE722C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		439502BDB29394EE0D69336E69C8494C /* Build configuration list for PBXNativeTarget "Nimble" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1502,6 +1497,15 @@
 			buildConfigurations = (
 				4D397A726AAA6CAC3B44E8E0C209A52C /* Debug */,
 				953970313A9DC828914A65F82B22DE9C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A0AA2891B874B1BDF1CF28744651414A /* Build configuration list for PBXNativeTarget "CreditCardEvaluator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8068C46F3ADE5FC40020D987D9D8A55 /* Debug */,
+				713F8BD77FE11B5AEBBA7730D4C7F435 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

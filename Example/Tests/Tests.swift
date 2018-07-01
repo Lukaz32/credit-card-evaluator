@@ -16,7 +16,7 @@ class CreditCardEvaluatorSpec: QuickSpec {
                 
                 it("should throw a numberIsInvalid exception") {
                     expect { try CreditCardEvaluator.isCardNumberValid(inputNumber) }
-                        .to(throwError(CreditCardEvaluator.EvaluationError.numberIsInvalid))
+                        .to(throwError(EvaluationError.numberIsInvalid))
                 }
             }
             
@@ -27,7 +27,7 @@ class CreditCardEvaluatorSpec: QuickSpec {
                 
                 it("should throw a numberIsTooShort exception") {
                     expect { try CreditCardEvaluator.isCardNumberValid(inputNumber) }
-                        .to(throwError(CreditCardEvaluator.EvaluationError.numberIsTooShort))
+                        .to(throwError(EvaluationError.numberIsTooShort))
                 }
             }
             
@@ -38,7 +38,7 @@ class CreditCardEvaluatorSpec: QuickSpec {
                 
                 it("should throw a numberIsTooLong exception") {
                     expect { try CreditCardEvaluator.isCardNumberValid(inputNumber) }
-                        .to(throwError(CreditCardEvaluator.EvaluationError.numberIsTooLong))
+                        .to(throwError(EvaluationError.numberIsTooLong))
                 }
             }
             
