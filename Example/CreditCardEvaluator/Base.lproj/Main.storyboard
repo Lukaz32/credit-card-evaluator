@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Evaluate Credit Card View Controller-->
+        <!--Credit Card Evaluator-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
                 <viewController id="vXZ-lx-hvc" customClass="EvaluateCreditCardViewController" customModule="CreditCardEvaluator_Example" customModuleProvider="target" sceneMemberID="viewController">
@@ -55,15 +55,15 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Card number is not valid" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4py-a6-p6S">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4py-a6-p6S">
                                 <rect key="frame" x="26" y="172" width="323" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Its brand is Visa" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8I9-0m-MV0">
-                                <rect key="frame" x="26" y="225" width="323" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8I9-0m-MV0">
+                                <rect key="frame" x="26" y="225" width="216" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -77,7 +77,7 @@
                             <constraint firstItem="L6v-mJ-hbE" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="206" id="e3h-4P-XNR"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="e8b-96-LES"/>
+                    <navigationItem key="navigationItem" title="Credit Card Evaluator" id="e8b-96-LES"/>
                     <connections>
                         <outlet property="labelCardBrand" destination="8I9-0m-MV0" id="gtE-Fa-jzM"/>
                         <outlet property="labelCardNumber" destination="rMq-yW-16d" id="ugv-IV-LVd"/>
