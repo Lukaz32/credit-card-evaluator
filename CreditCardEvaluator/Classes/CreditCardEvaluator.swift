@@ -16,7 +16,7 @@ public struct CreditCardEvaluator {
         guard CharacterSet.decimalDigits.isSuperset(of: CharacterSet(charactersIn: input)) else { throw EvaluationError.invalidCharacters }
         guard !input.isEmpty, input.first != "0" else { throw EvaluationError.numberIsInvalid }
         guard input.count >= 12  else { throw EvaluationError.numberIsTooShort }
-        guard input.count <= 18 else { throw EvaluationError.numberIsTooLong }
+        guard input.count <= 19 else { throw EvaluationError.numberIsTooLong }
         return (luhnsAlgorithmChek(input), cardBrand(input))
     }
     
