@@ -31,10 +31,13 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                             </textField>
-                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z5K-bL-nkE">
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z5K-bL-nkE">
                                 <rect key="frame" x="70" y="370" width="234" height="46"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.090196078430000007" green="0.56078431370000004" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="TEu-Ot-W0G"/>
+                                    <constraint firstAttribute="width" constant="234" id="l0q-Ef-CYd"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Evaluate">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -48,37 +51,59 @@
                                     <action selector="buttonEvaluateTouched:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="cH2-Ql-lyY"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rMq-yW-16d">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rMq-yW-16d">
                                 <rect key="frame" x="26" y="119" width="323" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="TtI-rH-jh6"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4py-a6-p6S">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4py-a6-p6S">
                                 <rect key="frame" x="26" y="172" width="323" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="bsK-ft-LOW"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8I9-0m-MV0">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8I9-0m-MV0">
                                 <rect key="frame" x="26" y="225" width="216" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="8hu-9b-VBv"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ezt-RW-2id">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ezt-RW-2id">
                                 <rect key="frame" x="250" y="209" width="69" height="52"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="Thg-sz-cNQ"/>
+                                    <constraint firstAttribute="width" constant="69" id="WL9-3g-jhA"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="L6v-mJ-hbE" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="10" id="9tF-ff-LbH"/>
                             <constraint firstAttribute="trailingMargin" secondItem="L6v-mJ-hbE" secondAttribute="trailing" constant="10" id="CNk-P1-7za"/>
-                            <constraint firstItem="L6v-mJ-hbE" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="206" id="e3h-4P-XNR"/>
+                            <constraint firstItem="4py-a6-p6S" firstAttribute="top" secondItem="rMq-yW-16d" secondAttribute="bottom" constant="32" id="DEQ-LU-kyi"/>
+                            <constraint firstItem="ezt-RW-2id" firstAttribute="leading" secondItem="8I9-0m-MV0" secondAttribute="trailing" constant="8" id="FjM-HF-l11"/>
+                            <constraint firstItem="8I9-0m-MV0" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="10" id="HWI-Dq-rjP"/>
+                            <constraint firstItem="L6v-mJ-hbE" firstAttribute="top" secondItem="8I9-0m-MV0" secondAttribute="bottom" constant="48" id="J9N-p5-Rvv"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="4py-a6-p6S" secondAttribute="trailing" constant="10" id="Lhu-bd-K2T"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ezt-RW-2id" secondAttribute="trailing" constant="40" id="V4h-St-Gg6"/>
+                            <constraint firstItem="8I9-0m-MV0" firstAttribute="top" secondItem="4py-a6-p6S" secondAttribute="bottom" constant="32" id="gN2-x4-ehu"/>
+                            <constraint firstItem="Z5K-bL-nkE" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="hxL-Nd-bxV"/>
+                            <constraint firstItem="rMq-yW-16d" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="31" id="pUC-qg-8UJ"/>
+                            <constraint firstItem="rMq-yW-16d" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="10" id="pcY-5L-QJi"/>
+                            <constraint firstItem="ezt-RW-2id" firstAttribute="top" secondItem="4py-a6-p6S" secondAttribute="bottom" constant="16" id="qtC-8J-OYh"/>
+                            <constraint firstItem="Z5K-bL-nkE" firstAttribute="top" secondItem="L6v-mJ-hbE" secondAttribute="bottom" constant="41" id="v0V-kb-0yz"/>
+                            <constraint firstItem="4py-a6-p6S" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="10" id="wnk-7L-T0I"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="rMq-yW-16d" secondAttribute="trailing" constant="10" id="zAd-iQ-URw"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Credit Card Evaluator" id="e8b-96-LES"/>
