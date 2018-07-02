@@ -8,6 +8,7 @@ class EvaluateCreditCardViewController: UIViewController {
     @IBOutlet private weak var labelCardStatus: UILabel!
     @IBOutlet private weak var labelCardNumber: UILabel!
     @IBOutlet private weak var textFieldInput: UITextField!
+    @IBOutlet private weak var imageViewCardBrand: UIImageView!
     
     // MARK: Properties
     
@@ -30,8 +31,8 @@ class EvaluateCreditCardViewController: UIViewController {
 }
 
 extension EvaluateCreditCardViewController: EvaluateCreditCardView {
-    func setCardBrand(_ brand: String) {
-        labelCardBrand.text = brand
+    func setCardBrandText(_ text: String) {
+        labelCardBrand.text = text
     }
     
     func setInputFieldText(_ text: String) {
@@ -40,6 +41,10 @@ extension EvaluateCreditCardViewController: EvaluateCreditCardView {
     
     func setCardNumberText(_ text: String) {
         labelCardNumber.text = text
+    }
+    
+    func setCardBrandImage(_ image: UIImage?) {
+        imageViewCardBrand.image = image
     }
     
     func setCardValidationText(_ text: String) {

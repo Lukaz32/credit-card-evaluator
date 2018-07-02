@@ -69,6 +69,10 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ezt-RW-2id">
+                                <rect key="frame" x="250" y="209" width="69" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -79,6 +83,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Credit Card Evaluator" id="e8b-96-LES"/>
                     <connections>
+                        <outlet property="imageViewCardBrand" destination="ezt-RW-2id" id="Asb-l0-4ao"/>
                         <outlet property="labelCardBrand" destination="8I9-0m-MV0" id="gtE-Fa-jzM"/>
                         <outlet property="labelCardNumber" destination="rMq-yW-16d" id="ugv-IV-LVd"/>
                         <outlet property="labelCardStatus" destination="4py-a6-p6S" id="4Z4-W6-dmU"/>
