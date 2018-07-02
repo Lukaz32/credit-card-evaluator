@@ -4,12 +4,18 @@
 [![Version](https://img.shields.io/cocoapods/v/CreditCardEvaluator.svg?style=flat)](https://cocoapods.org/pods/CreditCardEvaluator)
 [![License](https://img.shields.io/cocoapods/l/CreditCardEvaluator.svg?style=flat)](https://cocoapods.org/pods/CreditCardEvaluator)
 [![Platform](https://img.shields.io/cocoapods/p/CreditCardEvaluator.svg?style=flat)](https://cocoapods.org/pods/CreditCardEvaluator)
+ 
+Credit Card Evaluator is a simple library for validating credit cards.
+
+It relies on the Luhn's Algorithm for its core validation method.
+
+It has all its main use cases tested in a behavior driver manner using [Quick](https://github.com/Quick/Quick) and [Nimble](https://github.com/Quick/Nimble).
 
 ## Example
+An Example project is also provided for illustrating the use of the API.
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
-## Requirements
 
 ## Installation
 
@@ -22,7 +28,7 @@ pod 'CreditCardEvaluator'
 
 ## Author
 
-lukaz32, lukazz32@gmail.com
+Lucas M. Pereira, lukazz32@gmail.com
 
 ## License
 
