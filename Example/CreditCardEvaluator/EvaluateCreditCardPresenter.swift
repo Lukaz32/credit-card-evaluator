@@ -25,7 +25,7 @@ class EvaluateCreditCardPresenter {
         do {
             let (isValid, brand) = try CreditCardEvaluator.isCardNumberValid(input)
             view?.setCardValidationText(isValid ? "Card number is valid" : "Card number is not valid")
-            view?.setCardBrandText(brand.rawValue)
+            view?.setCardBrandText(brand.name)
             view?.setCardNumberText(input)
             view?.setInputFieldText("")
             view?.setCardBrandImage(brand.icon)

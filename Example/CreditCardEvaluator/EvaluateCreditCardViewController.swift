@@ -30,6 +30,8 @@ class EvaluateCreditCardViewController: UIViewController {
     }
 }
 
+// MARK: - EvaluateCreditCardView
+
 extension EvaluateCreditCardViewController: EvaluateCreditCardView {
     func setCardBrandText(_ text: String) {
         labelCardBrand.text = text

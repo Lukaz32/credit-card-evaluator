@@ -8,17 +8,26 @@ public struct CreditCardEvaluator {
         case maestro = "Maestro"
         case chinaUnionPay = "China Union Pay"
         case unknown = "Unknown"
+        
+        public var name: String {
+            return self.rawValue
+        }
     }
     
     public typealias CardEvaluation = (isValid: Bool, brand: CardBrand)
+    typealias EError = EvaluationError
+    
+    // MARK: Public API
     
     public static func isCardNumberValid(_ input: String) throws -> CardEvaluation {
-        guard CharacterSet.decimalDigits.isSuperset(of: CharacterSet(charactersIn: input)) else { throw EvaluationError.invalidCharacters }
-        guard !input.isEmpty, input.first != "0" else { throw EvaluationError.numberIsInvalid }
-        guard input.count >= 12  else { throw EvaluationError.numberIsTooShort }
-        guard input.count <= 19 else { throw EvaluationError.numberIsTooLong }
+        guard CharacterSet.decimalDigits.isSuperset(of: CharacterSet(charactersIn: input)) else { throw EError.invalidCharacters }
+        guard !input.isEmpty, input.first != "0" else { throw EError.numberIsInvalid }
+        guard input.count >= 12  else { throw EError.numberIsTooShort }
+        guard input.count <= 19 else { throw EError.numberIsTooLong }
         return (luhnsAlgorithmChek(input), cardBrand(input))
     }
+    
+    // MARK: Private API
     
     private static func luhnsAlgorithmChek( _ input: String) -> Bool {
         let input = input.reversed().map { String($0) }
