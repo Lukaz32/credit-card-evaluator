@@ -5,8 +5,8 @@ PODS:
 
 DEPENDENCIES:
   - CreditCardEvaluator (from `../`)
-  - Nimble
-  - Quick
+  - Nimble (~> 8.0.1)
+  - Quick (~> 2.1.0)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -18,10 +18,10 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  CreditCardEvaluator: 9a6f13b4d7b33aabaf8bb0e8600f365ffa02f874
+  CreditCardEvaluator: 1f2ff5ab5f65a1460852561c14f2b1a15e98b617
   Nimble: 45f786ae66faa9a709624227fae502db55a8bdd0
   Quick: 4be43f6634acfa727dd106bdf3929ce125ffa79d
 
-PODFILE CHECKSUM: 928190cbe721cd28f19e675a8f056d29e6b300b9
+PODFILE CHECKSUM: 5aca8fe71f908e10a1c2659a017a8f0b26acc0b9
 
 COCOAPODS: 1.5.3

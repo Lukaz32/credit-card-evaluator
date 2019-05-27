@@ -12,20 +12,28 @@ class EvaluateCreditCardViewController: UIViewController {
     
     // MARK: Properties
     
-    private let presenter = EvaluateCreditCardPresenter()
+    private let presenter: EvaluateCreditCardPresentation
+    
+    init(presenter: EvaluateCreditCardPresentation = EvaluateCreditCardPresenter()) {
+        self.presenter = presenter
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    @available(*, unavailable)
+    required init?(coder aDecoder: NSCoder) { return nil }
     
     // MARK: - Life Cycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        presenter.attachView(view: self)
+        presenter.attachView(self)
     }
     
     // MARK: Actions
     
     @IBAction private func buttonEvaluateTouched(_ sender: UIButton) {
         guard let input = textFieldInput.text else { return }
-        presenter.evaluateInput(input)
+        presenter.evaluateSelected(with: input)
         view.endEditing(true)
     }
 }

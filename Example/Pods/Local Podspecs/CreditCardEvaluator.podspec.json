@@ -1,22 +1,23 @@
 {
   "name": "CreditCardEvaluator",
   "version": "0.1.0",
-  "summary": "A short description of CreditCardEvaluator.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/lukaz32/CreditCardEvaluator",
+  "summary": "A tiny library for validating credit card numbers.",
+  "description": "A tiny library for validating credit card numbers according to Luhn's Algorithm.",
+  "homepage": "https://github.com/Lukaz32/credit-card-evaluator",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
   },
   "authors": {
-    "lukaz32": "lukazz32@gmail.com"
+    "lukaz32": "lucasmp.at@gmail.com"
   },
   "source": {
-    "git": "https://github.com/lukaz32/CreditCardEvaluator.git",
+    "git": "https://github.com/Lukaz32/credit-card-evaluator.git",
     "tag": "0.1.0"
   },
   "platforms": {
     "ios": "8.0"
   },
+  "swift_version": "5.0",
   "source_files": "CreditCardEvaluator/Classes/**/*"
 }

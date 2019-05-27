@@ -1,43 +1,18 @@
 import CreditCardEvaluator
 
-protocol EvaluateCreditCardView: class {
-    func setCardBrandText(_ text: String)
-    func setInputFieldText(_ text: String)
-    func setCardNumberText(_ text: String)
-    func setCardBrandImage(_ image: UIImage?)
-    func setCardValidationText(_ text: String)
-    func displayErrorMessage(_ message: String, title: String)
-}
-
 class EvaluateCreditCardPresenter {
     
     // MARK: Properties
     
     private weak var view: EvaluateCreditCardView?
+    private let interactor: EvaluateCreditCardInteraction
     
-    // MARK: Public API
+    // MARK: Initialization
     
-    func attachView(view: EvaluateCreditCardView) {
-        self.view = view
+    init(interactor: EvaluateCreditCardInteraction = EvaluateCreditCardInteractor()) {
+        self.interactor = interactor
     }
-    
-    func evaluateInput(_ input: String) {
-        do {
-            let (isValid, brand) = try CreditCardEvaluator.isCardNumberValid(input)
-            view?.setCardValidationText(isValid ? "Card number is valid" : "Card number is not valid")
-            view?.setCardBrandText(brand.name)
-            view?.setCardNumberText(input)
-            view?.setInputFieldText("")
-            view?.setCardBrandImage(brand.icon)
-        } catch let error as EvaluationError {
-            view?.displayErrorMessage(error.localizedDescription, title: "Evaluation Error")
-            clearAllFields()
-        } catch {
-            view?.displayErrorMessage("Unexpected error", title: "Evaluation Error")
-            clearAllFields()
-        }
-    }
-    
+
     // MARK: Private API
     
     private func clearAllFields() {
@@ -47,19 +22,26 @@ class EvaluateCreditCardPresenter {
     }
 }
 
-private extension CreditCardEvaluator.CardBrand {
-    var icon: UIImage? {
-        switch self {
-        case .visa:
-            return #imageLiteral(resourceName: "visa")
-        case .mastercard:
-            return #imageLiteral(resourceName: "mastercard")
-        case .maestro:
-            return #imageLiteral(resourceName: "maestro")
-        case .chinaUnionPay:
-            return #imageLiteral(resourceName: "unionPay")
-        case .unknown:
-            return nil
+// MARK: - EvaluateCreditCardPresentation
+
+extension EvaluateCreditCardPresenter: EvaluateCreditCardPresentation {
+    
+    func attachView(_ view: EvaluateCreditCardView) {
+        self.view = view
+    }
+    
+    func evaluateSelected(with input: String) {
+        switch interactor.validateInput(input) {
+        case .success(let card):
+            view?.setCardValidationText("Card number is valid")
+            view?.setCardBrandText(card.brandName)
+            view?.setCardNumberText(card.number)
+            view?.setInputFieldText("")
+            view?.setCardBrandImage(card.icon)
+        case .failure(let error):
+            view?.setCardValidationText("Card number is not valid")
+            view?.displayErrorMessage(error.localizedDescription, title: "Evaluation Error")
+            clearAllFields()
         }
     }
 }

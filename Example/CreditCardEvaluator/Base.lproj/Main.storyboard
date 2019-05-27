@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="cQd-TH-0Qu">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="cQd-TH-0Qu">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -32,7 +31,7 @@
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                             </textField>
                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z5K-bL-nkE">
-                                <rect key="frame" x="70" y="370" width="234" height="46"/>
+                                <rect key="frame" x="70.666666666666686" y="370" width="234" height="46"/>
                                 <color key="backgroundColor" red="0.090196078430000007" green="0.56078431370000004" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="46" id="TEu-Ot-W0G"/>
@@ -92,13 +91,13 @@
                             <constraint firstAttribute="trailingMargin" secondItem="L6v-mJ-hbE" secondAttribute="trailing" constant="10" id="CNk-P1-7za"/>
                             <constraint firstItem="4py-a6-p6S" firstAttribute="top" secondItem="rMq-yW-16d" secondAttribute="bottom" constant="32" id="DEQ-LU-kyi"/>
                             <constraint firstItem="ezt-RW-2id" firstAttribute="leading" secondItem="8I9-0m-MV0" secondAttribute="trailing" constant="8" id="FjM-HF-l11"/>
+                            <constraint firstItem="rMq-yW-16d" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="31" id="HIs-KB-EhI"/>
                             <constraint firstItem="8I9-0m-MV0" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="10" id="HWI-Dq-rjP"/>
                             <constraint firstItem="L6v-mJ-hbE" firstAttribute="top" secondItem="8I9-0m-MV0" secondAttribute="bottom" constant="48" id="J9N-p5-Rvv"/>
                             <constraint firstAttribute="trailingMargin" secondItem="4py-a6-p6S" secondAttribute="trailing" constant="10" id="Lhu-bd-K2T"/>
                             <constraint firstAttribute="trailingMargin" secondItem="ezt-RW-2id" secondAttribute="trailing" constant="40" id="V4h-St-Gg6"/>
                             <constraint firstItem="8I9-0m-MV0" firstAttribute="top" secondItem="4py-a6-p6S" secondAttribute="bottom" constant="32" id="gN2-x4-ehu"/>
                             <constraint firstItem="Z5K-bL-nkE" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="hxL-Nd-bxV"/>
-                            <constraint firstItem="rMq-yW-16d" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="31" id="pUC-qg-8UJ"/>
                             <constraint firstItem="rMq-yW-16d" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="10" id="pcY-5L-QJi"/>
                             <constraint firstItem="ezt-RW-2id" firstAttribute="top" secondItem="4py-a6-p6S" secondAttribute="bottom" constant="16" id="qtC-8J-OYh"/>
                             <constraint firstItem="Z5K-bL-nkE" firstAttribute="top" secondItem="L6v-mJ-hbE" secondAttribute="bottom" constant="41" id="v0V-kb-0yz"/>
